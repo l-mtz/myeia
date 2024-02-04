@@ -156,6 +156,8 @@ class API:
                 df = base_df[["period", "value", "series-description", "series"]]
             elif facet == "seriesId":
                 df = base_df[["period", "value", "seriesDescription", "seriesId"]]
+            elif facet == "fueltype"
+                 df = base_df[["period", "value", "respondent-name", "fueltype"]]
 
             df.reset_index(drop=True, inplace=True)
             df.rename(columns={df.columns[1]: df[df.columns[2]][0]}, inplace=True)
